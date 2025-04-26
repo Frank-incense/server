@@ -1,10 +1,17 @@
-const jsonServer = require("json-server"); // importing json-server library
-const server = jsonServer.create();
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 3001; // you can use any port number here; i chose to use 3001
+const jsonServer = require('json-server')
 
-server.use(middlewares);
-server.use(router);
+const server = jsonServer.create()
 
-server.listen(port);
+const router = jsonServer.router('db.json')
+const middlewares = jsonServer.defaults()
+
+server.use(middlewares)
+server.use('/api', router)
+server.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://njmwas.github.io') // The URL you put here is for the web application that you have deployed using Github Pages
+    res.header('Access-Control-Allow-Headers', '*')
+    next()
+})
+server.listen(process.env.PORT || 5000, () => {
+    console.log('JSON Server is running')
+})
