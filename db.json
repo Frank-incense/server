@@ -1,0 +1,50 @@
+{
+    "users": [
+      {
+        "id": "9dd6c3e3-ac83-43b0-9a77-5007239f4208",
+        "name": "frank",
+        "email": "frank@frank.com",
+        "phone": "+254745411366",
+        "js": true,
+        "html": true,
+        "css": true,
+        "python": false,
+        "linkedin": "https://www.linkedin.com/in/frankincense-wesley/",
+        "password": "1234"
+      },
+      {
+        "id": "f687f24a-7472-4a0e-ad79-131ed28c7d62",
+        "name": "George M Mwazuna",
+        "email": "georgemwazuna6253@gmail.com",
+        "phone": "0799630214",
+        "js": true,
+        "html": false,
+        "css": false,
+        "python": false,
+        "linkedin": "euwkvbc.com",
+        "password": "123456"
+      },
+      {
+        "id": "4db8b6ba-2037-41d1-a69f-89e7aaa602a8",
+        "name": "Edel",
+        "email": "edel.omondi@student.moringaschool.com",
+        "phone": "+254 727 907 231",
+        "js": true,
+        "html": true,
+        "css": false,
+        "python": false,
+        "linkedin": "https://www.linkedin.com/in/edel-omondi",
+        "password": "0000"
+      }
+    ],
+    "applications": [
+      {
+        "id": "1e0e",
+        "jobTitle": "Police",
+        "company": "KPLC",
+        "dateApplied": "2025-04-26",
+        "status": "Pending",
+        "notes": ""
+      }
+    ]
+  }
